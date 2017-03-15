@@ -1,0 +1,29 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.recipe-items {
+	position: relative;
+	margin-bottom:30px;
+	img {
+		border: 15px solid darkslategray;
+		width: 100%;
+	}
+	h2 {
+		color: white;
+    	background: darkslategray;
+    	padding: 15px;
+    	margin: 0;
+	}
+	.recipe-more {
+		position: absolute;
+    	top: 0;
+	    right: 0;
+	    left: 0;
+	    bottom: 0;
+	    text-indent: -99999px;
+	    &:hover {
+	    	background: transparent;
+	    }
+	}
+}

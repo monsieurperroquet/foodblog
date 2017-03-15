@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+<h1>
+  <%= @post.title %>
+</h1>
+<%= image_tag(@post.image_url, width: 800) if @post.image.present? %>
+<%= @post.content.html_safe %>
+<p>
+  <strong>Category:</strong>
+  <%= @post.category %>
+</p>
+
+<p>
+  <strong>Published:</strong>
+  <%= @post.published %>
+</p>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>
+
+
